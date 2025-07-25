@@ -1,0 +1,8 @@
+.env
+.idea 
+.vscode
+wandb
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
