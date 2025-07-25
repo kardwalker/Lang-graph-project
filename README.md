@@ -25,12 +25,21 @@ Lang-graph-project is a repository designed to explore, implement, and demonstra
    git clone https://github.com/kardwalker/Lang-graph-project.git
    cd Lang-graph-project
    ```
+### Create an environment and install dependencies
+2. Create an venv and install dependencies:
+```Mac/Linux/WSL   
+   
+$ python3 -m venv langgraph_env
+$ source langgraph_env/bin/activate
+$ pip install -r requirements.txt
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Windows
 
+PS> python3 -m venv lc-academy-env
+PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+PS> lc-academy-env\scripts\activate
+PS> pip install -r requirements.txt```
+```
 ### Usage
 
 Explore the example scripts in the `examples/` directory:
@@ -45,12 +54,10 @@ Or run your own code using the provided modules.
 
 ```
 Lang-graph-project/
-├── examples/           # Example scripts and notebooks
-├── lang_graph/         # Core modules and graph algorithms
-├── tests/              # Unit tests
-├── requirements.txt    # Python dependencies
-└── README.md           # This file
+
 ```
+## Set Azure/Anthropic/OpenAI/Gemini
+Set API_KEY in your environment
 
 ## Contributing
 
