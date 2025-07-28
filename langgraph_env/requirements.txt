@@ -1,0 +1,49 @@
+# Core LangChain and LangGraph dependencies
+langgraph>=0.2.0
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-community>=0.2.0
+langchain-core>=0.2.0
+langchain-chroma>=0.1.0
+
+# Vector stores and embeddings
+faiss-cpu>=1.7.4
+chromadb>=0.4.0
+
+# Azure OpenAI integration
+openai>=1.0.0
+
+# Web scraping and HTTP requests
+aiohttp>=3.9.1
+beautifulsoup4>=4.12.2
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Search engines
+googlesearch-python>=1.2.3
+duckduckgo-search>=6.1.0
+
+# Data processing and ML
+numpy>=1.24.3
+scikit-learn>=1.3.0
+sentence-transformers>=2.2.2
+# Web API framework
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+
+# Caching and database
+redis>=5.0.1
+
+# Environment and configuration
+python-dotenv>=1.0.0
+
+# Monitoring and logging
+wandb>=0.15.0
+
+# Document processing
+PyPDF2>=3.0.0
+pypdf>=3.0.0
+
+# Additional utilities
+typing-extensions>=4.7.0

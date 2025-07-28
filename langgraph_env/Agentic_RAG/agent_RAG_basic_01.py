@@ -16,6 +16,7 @@ text1 = "LangGraph is a library for building stateful, multi-actor applications 
 text2 = "LangChain is a framework for building context-aware reasoning applications."
 text3 = "The quick brown fox jumps over the lazy dog."
 
+# Create the Vector Store and Indexing the Document
 vectorstore = InMemoryVectorStore.from_texts([text1, text2 , text3],embedding=embedding)
 
 # convert the vector store into a retriever

@@ -61,3 +61,9 @@ async def main():
     # ... print statements
 """
 
+# Cosine distance
+
+# Calculated as (1 - similarity)
+# Same direction, 0.0
+# If prependicular, 1.0
+# If completely opposite, 2.0

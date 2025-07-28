@@ -20,7 +20,7 @@ doc = [
     ),
     Document(
         page_content= "LangChain is an open-source framework designed to help developers build applications powered by Large Language Models (LLMs) such as OpenAI’s GPT, Anthropic's Claude, and others. It provides tools to connect LLMs with external data, reasoning chains, memory, tools, agents, and more."
-        , metadata={"source": "doc2"}
+        , metadata={"source": "doc2"}    
 
     ),
     Document(
