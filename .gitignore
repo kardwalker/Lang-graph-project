@@ -1,8 +1,30 @@
+﻿# Environment files
 .env
 .idea 
 .vscode
-wandb
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Virtual environment
+langgraph_env/Lib/
+langgraph_env/Scripts/
+langgraph_env/Include/
+langgraph_env/share/
+langgraph_env/pyvenv.cfg
+
+# Site packages
+site-packages/
+
+# Executables
+*.exe
+
+# Logs and databases
+wandb/
+*.log
+
+# ChromaDB databases (optional - uncomment if you don't want to track them)
+# chroma_db_*/
