@@ -26,5 +26,10 @@ site-packages/
 wandb/
 *.log
 
-# ChromaDB databases (optional - uncomment if you don't want to track them)
-# chroma_db_*/
+# ChromaDB databases - these are large and should not be tracked
+chroma_db_*/
+chroma_store/
+**/chroma_db_*/
+**/chroma_store/
+*.sqlite3
+*.bin
