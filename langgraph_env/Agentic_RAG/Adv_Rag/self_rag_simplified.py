@@ -165,7 +165,7 @@ def setup_vectorstores():
     # Larger chunks = more context but may include irrelevant information
     text_splitter = RecursiveCharacterTextSplitter(
         chunk_size=800,        # Size of each text chunk
-        chunk_overlap=150,     # Overlap between chunks to maintain context
+        chunk_overlap=50,     # Overlap between chunks to maintain context
         separators=["\n\n", "\n", ".", "!", "?", ",", " ", ""],  # Split hierarchy
         length_function=len,   # Function to measure chunk length
     )
@@ -181,7 +181,7 @@ def setup_vectorstores():
     
     # Return retriever with MMR (Maximum Marginal Relevance) search
     # MMR balances relevance and diversity in retrieved documents
-    return vectorstore.as_retriever(
+    return vectorstore.as_retriever(                                      
         search_type="mmr",
         search_kwargs={
             "k": 6,              # Number of documents to retrieve
