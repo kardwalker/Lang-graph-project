@@ -1,0 +1,27 @@
+Unittest is a fundamental concept and tool in software development that
+involves testing the smallest parts of code—known as units, typically functions or methods—to ensure they behave as expected.
+In Python, the term typically refers to the built-in unittest framework
+
+
+ You can also use pytest for more advanced features.
+
+Pytest is a more advanced testing tool than unittest and 
+provides better support for things like fixtures, parameterized tests, and test reporting.
+
+
+# In terminal write
+
+for unittest
+python -m unittest name_of_agent_file_or_module.py
+
+for pytest
+pytest name_of_agent_file_or_module.py 
+
+
+### Handling Edge Cases and Exceptions
+
+Some edge Cases
+1.  **Empty Input**: Handle the case where the input is empty.
+2.  **Invalid Input**: Handle the case where the input is invalid
+3.  **Performance Under Load** : how does the agent perform with large data sets or high-freq requests
+
