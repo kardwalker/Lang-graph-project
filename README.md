@@ -1,15 +1,17 @@
-
-
 # Lang-graph-project
 
-Lang-graph-project is a repository designed to explore, implement, and demonstrate concepts related to agent algorithms that connect linguistic elements or computational tasks using graph-based models.
+Lang-graph-project is a comprehensive repository designed to explore, implement, and demonstrate concepts related to LangGraph - a library for building stateful, multi-actor applications with large language models (LLMs). This project contains practical examples, tutorials, and implementations covering various aspects of agent-based AI systems.
 
 ## Features
 
-- Graph-based representations of language or computational workflows
-- Algorithms for traversing, analyzing, or manipulating language graphs
-- Example scripts and notebooks for demonstrations
-- Modular and extensible codebase for experimentation
+- **LangGraph Fundamentals**: Basic concepts and state management
+- **Tool Calling**: Integration with external APIs and tools
+- **Human-in-the-Loop (HITL)**: Interactive workflows requiring human input
+- **Multi-Agent Architecture**: Collaborative agent systems
+- **Plan and Execute**: Strategic planning and execution patterns
+- **Agentic RAG**: Retrieval-Augmented Generation with agent capabilities
+- **Memory Management**: Persistent state across conversations
+- **ReAct Patterns**: Reasoning and Acting frameworks
 
 ## Getting Started
 
@@ -17,6 +19,7 @@ Lang-graph-project is a repository designed to explore, implement, and demonstra
 
 - Python 3.8 or higher recommended
 - [pip](https://pip.pypa.io/en/stable/) for dependency management
+- API keys for OpenAI, Azure, Anthropic, or Gemini (depending on usage)
 
 ### Installation
 
@@ -25,39 +28,78 @@ Lang-graph-project is a repository designed to explore, implement, and demonstra
    git clone https://github.com/kardwalker/Lang-graph-project.git
    cd Lang-graph-project
    ```
-### Create an environment and install dependencies
-2. Create an venv and install dependencies:
-```Mac/Linux/WSL   
-   
-$ python3 -m venv langgraph_env
-$ source langgraph_env/bin/activate
-$ pip install -r requirements.txt
 
-Windows
+2. Create a virtual environment and install dependencies:
 
-PS> python3 -m venv lc-academy-env
-PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-PS> lc-academy-env\scripts\activate
-PS> pip install -r requirements.txt```
-```
+   **Mac/Linux/WSL:**
+   ```bash
+   python3 -m venv langgraph_env
+   source langgraph_env/bin/activate
+   pip install -r requirements.txt
+   ```
+
+   **Windows:**
+   ```powershell
+   python3 -m venv langgraph_env
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+   langgraph_env\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
 ### Usage
 
-Explore the example scripts in the `examples/` directory:
+Explore the example scripts in the `langgraph_env/` directory:
 
 ```bash
-python examples/example_script.py
-```
+# Basic LangGraph concepts
+python langgraph_env/lesson1.py
 
-Or run your own code using the provided modules.
+# Tool calling examples
+python langgraph_env/basic_tool_calling_01.py
+
+# Human-in-the-loop examples
+python langgraph_env/HITL/basic.bp_01.py
+
+# Multi-agent examples
+python langgraph_env/Multi_Agent_architecture/multi_agent_start.py
+```
 
 ## Project Structure
 
 ```
 Lang-graph-project/
-
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── langgraph_env/              # Main code directory
+│   ├── lesson1.py             # Basic LangGraph introduction
+│   ├── basic_tool_calling_01.py
+│   ├── agent_with_memory.py
+│   ├── HITL/                  # Human-in-the-Loop examples
+│   ├── Multi_Agent_architecture/
+│   ├── Plan_and_Execute/      # Planning and execution patterns
+│   ├── Agentic_RAG/          # RAG with agents
+│   ├── PROJECT/              # Main project implementations
+│   ├── ReAct/                # ReAct pattern examples
+│   └── Testing/              # Test files
+├── simplified_rag_workflow.png
+├── graph_309.png
+├── graph_9869.png
+└── 2311.12983v1.pdf          # Research paper reference
 ```
-## Set Azure/Anthropic/OpenAI/Gemini
-Set API_KEY in your environment
+
+## API Configuration
+
+Set your API keys in your environment:
+
+```bash
+export OPENAI_API_KEY="your-openai-key"
+export AZURE_OPENAI_API_KEY="your-azure-key"
+export ANTHROPIC_API_KEY="your-anthropic-key"
+export GOOGLE_API_KEY="your-gemini-key"
+```
+
+Or create a `.env` file in the project root with your keys.
 
 ## Contributing
 
